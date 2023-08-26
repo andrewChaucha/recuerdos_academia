@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>!RECUERDOS¡🤞</title>
+    <link rel="stylesheet" href="snow.css">
+</head>
+<body>
+    <main class="main-container">
+        <h1 class="title">!RECUERDOS¡🤞</h1>
+    </main>
+    <div class="box">
+        <span style="--i:1;"><img src="img/ella.jpeg" alt=""></span>
+        <span style="--i:2;"><img src="img/camila rene.jpeg" alt=""></span>
+        <span style="--i:3;"><img src="img/pecados.jpeg" alt=""></span>
+        <span style="--i:4;"><img src="img/todos.jpeg" alt=""></span>
+        <span style="--i:5;"><img src="img/es.jpeg" alt=""></span>
+        <span style="--i:6;"><img src="img/matias.jpeg" alt=""></span>
+        <span style="--i:7;"><img src="img/con leo.jpeg" alt=""></span>
+        <span style="--i:8;"><img src="img/fiesta.jpeg" alt=""></span>
+    </div>
+    <script src="index.js" ></script>
+    <script type="text/javascript">
+        let box = document.querySelector('.box');
+        window.onmousemove = function (e){
+            let x = e.clientX/3;
+            box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+        }
+    </script>
+</body>
+</html>
